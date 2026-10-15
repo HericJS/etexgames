@@ -1,0 +1,30 @@
+ETEXGames — estrutura inicial
+
+CONTEÚDO
+- index.html: catálogo inicial com pesquisa e filtros.
+- css/style.css: identidade visual responsiva.
+- js/app.js: busca e filtros do catálogo.
+- jogos/jogo-demo/: página individual e minijogo funcional em HTML5 Canvas.
+
+TESTAR LOCALMENTE
+1. Extraia a pasta etexgames.
+2. Abra index.html no navegador para testar o catálogo.
+3. Clique em Pixel Quest para abrir o minijogo.
+
+HOSPEDAR COM NGINX NO DEBIAN
+Copie o conteúdo da pasta etexgames para /var/www/etexgames.
+O Nginx deve ter root /var/www/etexgames e index index.html.
+Depois execute:
+  sudo nginx -t
+  sudo systemctl reload nginx
+
+PUBLICAR NO GITHUB PAGES
+Envie o conteúdo desta pasta para a raiz do repositório GitHub, mantendo index.html na raiz.
+Em Settings > Pages, selecione a branch main e a pasta /(root).
+Os caminhos relativos foram escritos para funcionar em repositório de projeto (ex.: /etexgames/).
+
+OBSERVAÇÕES
+- Os cartões além de Pixel Quest são demonstrações visuais; substitua-os pelos jogos reais.
+- Para adicionar um jogo Web, crie uma pasta em jogos/NOME-DO-JOGO e coloque os arquivos exportados nela.
+- Jogos .exe não rodam diretamente no navegador. Para o portal ser estilo Poki, prefira builds HTML5/Web.
+- O feedback ainda não armazena respostas; isso será implementado depois com um serviço apropriado.

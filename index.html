@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#15171b">
+  <meta name="description" content="ETEXGames — jogos criados por estudantes. Jogue, descubra e compartilhe feedback.">
+  <title>ETEXGames — Jogos feitos por estudantes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ETEXGames, página inicial">
+      <span class="brand-mark">E</span><span>ETEX<span class="brand-accent">Games</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="active" href="#inicio">Início</a>
+      <a href="#catalogo">Jogos</a>
+      <a href="#sobre">Sobre o projeto</a>
+    </nav>
+    <a class="header-cta" href="#catalogo">Explorar jogos <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> CRIATIVIDADE EM JOGO</p>
+        <h1>Ideias de alunos.<br><span>Jogos para todos.</span></h1>
+        <p class="hero-description">Descubra experiências criadas por estudantes, experimente novos jogos e ajude cada projeto a evoluir com seu feedback.</p>
+        <a class="primary-button" href="#catalogo">Encontrar um jogo <span aria-hidden="true">→</span></a>
+        <div class="hero-note"><span class="note-symbol">✦</span> Um espaço para criar, jogar e aprender.</div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa de jogos">
+        <div class="art-glow"></div>
+        <div class="art-card art-card-back"><span>PIXEL QUEST</span><div class="pixel-scene"><i></i><b></b><em></em></div></div>
+        <div class="art-card art-card-front"><span class="art-label">JOGUE • EXPLORE • COMPARTILHE</span><div class="controller">✣</div><div class="art-stars">✦　✧　✦</div></div>
+        <div class="art-chip chip-one">PLAYER 01</div><div class="art-chip chip-two">PRESS START ▶</div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">CATÁLOGO</p><h2>Encontre seu próximo jogo</h2><p class="section-subtitle">Experimente os projetos e descubra novas ideias.</p></div>
+        <div class="catalog-count"><strong id="game-count">4</strong><span> jogos no catálogo</span></div>
+      </div>
+      <div class="catalog-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="game-search" type="search" placeholder="Buscar jogos..." aria-label="Buscar jogos"></label>
+        <div class="category-filters" aria-label="Filtrar por categoria">
+          <button class="filter-button active" data-filter="todos" type="button">Todos</button>
+          <button class="filter-button" data-filter="aventura" type="button">Aventura</button>
+          <button class="filter-button" data-filter="puzzle" type="button">Puzzle</button>
+          <button class="filter-button" data-filter="arcade" type="button">Arcade</button>
+        </div>
+      </div>
+      <div class="game-grid" id="game-grid">
+        <article class="game-card" data-title="Pixel Quest" data-category="aventura">
+          <a class="game-cover cover-pixel" href="jogos/jogo-demo/index.html" aria-label="Jogar Pixel Quest"><span class="cover-kicker">AVENTURA</span><div class="pixel-character">◆</div><span class="cover-title">PIXEL QUEST</span><span class="cover-caption">UMA JORNADA COMEÇA</span></a>
+          <div class="game-info"><div><h3>Pixel Quest</h3><p>Jogo demonstrativo</p></div><span class="game-tag">Aventura</span></div>
+          <a class="card-link" href="jogos/jogo-demo/index.html">Jogar agora <span>→</span></a>
+        </article>
+        <article class="game-card" data-title="Mente em Jogo" data-category="puzzle">
+          <a class="game-cover cover-mind" href="jogos/jogo-demo/index.html" aria-label="Abrir Mente em Jogo"><span class="cover-kicker">DESAFIO</span><div class="shape-puzzle">◈</div><span class="cover-title">MENTE EM JOGO</span><span class="cover-caption">PENSE DIFERENTE</span></a>
+          <div class="game-info"><div><h3>Mente em Jogo</h3><p>Cartão de demonstração</p></div><span class="game-tag">Puzzle</span></div>
+          <a class="card-link" href="jogos/jogo-demo/index.html">Ver demonstração <span>→</span></a>
+        </article>
+        <article class="game-card" data-title="Neon Run" data-category="arcade">
+          <a class="game-cover cover-neon" href="jogos/jogo-demo/index.html" aria-label="Abrir Neon Run"><span class="cover-kicker">ARCADE</span><div class="neon-orb"></div><span class="cover-title">NEON RUN</span><span class="cover-caption">DESVIE. CORRA. REPITA.</span></a>
+          <div class="game-info"><div><h3>Neon Run</h3><p>Cartão de demonstração</p></div><span class="game-tag">Arcade</span></div>
+          <a class="card-link" href="jogos/jogo-demo/index.html">Ver demonstração <span>→</span></a>
+        </article>
+        <article class="game-card" data-title="Missão Planeta" data-category="aventura">
+          <a class="game-cover cover-planet" href="jogos/jogo-demo/index.html" aria-label="Abrir Missão Planeta"><span class="cover-kicker">EXPLORAÇÃO</span><div class="planet">●</div><span class="cover-title">MISSÃO PLANETA</span><span class="cover-caption">EXPLORE O DESCONHECIDO</span></a>
+          <div class="game-info"><div><h3>Missão Planeta</h3><p>Cartão de demonstração</p></div><span class="game-tag">Aventura</span></div>
+          <a class="card-link" href="jogos/jogo-demo/index.html">Ver demonstração <span>→</span></a>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>Nenhum jogo encontrado. Tente outra busca ou categoria.</p>
+      <p class="demo-notice">Os cartões acima são exemplos de estrutura. Apenas o Pixel Quest é um minijogo funcional de demonstração.</p>
+    </section>
+
+    <section class="about-section" id="sobre">
+      <div class="about-symbol">E<span>✦</span></div>
+      <div><p class="eyebrow">SOBRE O ETEXGAMES</p><h2>Feito para jogar.<br>Construído para aprender.</h2><p>Um espaço para dar visibilidade aos projetos de jogos desenvolvidos pelos estudantes. Jogue, teste e compartilhe sugestões respeitosas para ajudar os criadores a melhorar suas ideias.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">E</span><span>ETEX<span class="brand-accent">Games</span></span></a><p>Projetos estudantis, criatividade sem limite.</p><span>© <span id="current-year">2026</span> ETEXGames</span></footer>
+</body>
+</html>
